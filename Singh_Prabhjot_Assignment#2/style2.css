@@ -1,0 +1,31 @@
+body{
+    background-image: url("https://getwallpapers.com/wallpaper/full/8/2/3/1392864-best-simple-background-pictures-2560x1600.jpg");
+    color: aliceblue;
+}
+figure {
+    display: inline-block; /* Allows image and caption to stay together */
+    float: right; /* Float the figure (containing image and caption) to the right */
+    margin: 0;
+  }
+  
+  img {
+    position: relative;
+    left: 0px;
+    border-style: ridge; 
+  }
+  
+  figcaption {
+    text-align: center; 
+    font-size: 14px;
+    color: #f4eeee;
+    margin-top: 5px; /* Space between image and caption */
+  }
+  h1{
+    text-align: center;
+  }
+  #backbutton{
+    border-radius: 5%;
+    background-color: rgb(90, 25, 25); /* Sets the background color */
+    color: white; /* Optional: sets the text color to white */
+  }
+  
