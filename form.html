@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form-Page</title>
+        <link rel="stylesheet" href="oform.css">
+    </head>
+    <body>
+        <div class="heading">
+            <h1>Contact Us !</h1>
+            <p>Kindly, fill the form </p>
+        </div>
+        <div class="form">
+        <form>
+            <br>
+            <label id="fName">First Name: </label>
+            <input type="text" name="fName" id="fName" maxlength="12" required><br><br>
+            <label id="lName">Last Name: </label>
+            <input type="text" name="lName" id="lNmae" maxlength="12"><br><br>
+            <label id="street">Street Address: </label>
+            <input type="text" name="street" id="street" maxlength="20">
+            <label id="city">City: </label>
+            <input list="citylist" name="city" id="city" required> 
+            <datalist id="citylist">
+                <option value="Vancouver">
+                <option value="Victoria">
+                <option value="Surrey">
+                <option value="Burnaby">
+                <option value="Kelowna">
+                <option value="Toronto">
+                <option value="Ottawa">
+                <option value="Mississauga">
+                <option value="Brampton">
+                <option value="Calgary">
+                <option value="Edmonton">
+                <option value="Lethbridge">
+            </datalist><br><br>
+            <label id="province">Province: </label>
+            <input list="provincelist" id="province" name="province" required>
+            <datalist id="provincelist">
+                <option value="BC">
+                <option value="AB">
+                <option value="ON">
+                <option value="QC">
+                <option value="MB">
+                <option value="NB">
+                <option value="SK">
+            </datalist>
+            <label id="poscode">Postal Code: </label>
+            <input type="text" id="poscode" name="poscode" pattern="[A-Z][0-9][A-Z] [0-9][A-Z][0-9]" placeholder="V9X 0X0" required><br><br>
+            <label id="phone">Phone Number: </label>
+            <input type="tel" id="phone" name="phone" pattern="\d{10}" placeholder="23XXXXXXX" maxlength="10" required><br><br>
+            <label id="occupation">Occupation:</label>
+            <select id="occupation">
+                <option value="Student">Student</option>
+                <option value="Dancer">Dancer</option>
+                <option value="Accountant">Accountant</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Parent">Parent</option>
+                <option value="Performer">Performer</option>
+            </select>
+            <label for="option">**Contact Me: </label>
+            <input type="checkbox" id="option" name="option"><br><br>
+            <label>Submit additional information: </label><br><br>
+            <textarea name="info" id="info" rows="5" cols="30">Type Here...</textarea><br><br>
+            <input type="button" value="Submit" id="submit_feed" onclick="handleSubmit()">
+            <input type="button" value="Clear" id="clear_feed" onclick="handleClear()"><br><br>
+        </form>
+        </div>
+    </body>
+</html>
