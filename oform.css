@@ -82,7 +82,7 @@ input:invalid{
 }
 @media (max-width: 768px) {
     .form {
-        width: 90%; 
+        width: 50%; 
         margin-left: 5%;
         margin-top: 5%;
     }
@@ -91,16 +91,16 @@ input:invalid{
     select,
     input[type="list"],
     input[type="tel"] {
-        width: 90%;
+        width: 20%;
     }
 
     #poscode {
-        width: 90%;
+        width: 20%;
     }
 
     #info {
         margin-left: 0;
-        width: 90%;
+        width: 20%;
     }
 
     #submit_feed,
